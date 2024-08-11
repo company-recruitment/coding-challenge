@@ -1,4 +1,6 @@
-### **Next.js Coding Challenge: Gamer Discussion Snippets**
+# **Next.js Coding Challenge: Gamer Discussion Snippets**
+
+![pixy-coding-challenge](https://raw.githubusercontent.com/company-recruitment/coding-challenge/main/assets/pixy-coding-challenge.png)
 
 [![language](https://img.shields.io/badge/language-English-121212.svg?style=for-the-badge&labelColor=121212f2&color=9945FF)](https://github.com/company-recruitment/coding-challenge/blob/main/README.md)
 [![language](https://img.shields.io/badge/language-German-121212.svg?style=for-the-badge&labelColor=121212f2&color=9945FF)](https://github.com/company-recruitment/coding-challenge/blob/main/README.de.md)
@@ -69,8 +71,8 @@ Wir stellen dir ein Basisprojekt zur Verfügung, das mit Next.js, Tailwind CSS u
 1. **Clone the repository:**
 
    ```bash
-   git clone [REPO-URL]
-   cd project-folder
+   git clone https://github.com/company-recruitment/coding-challenge.git
+   cd coding-challenge
    ```
 
 2. **Install dependencies:**
@@ -92,7 +94,3 @@ Wir stellen dir ein Basisprojekt zur Verfügung, das mit Next.js, Tailwind CSS u
 #### **Viel Erfolg! 💪**
 
 Sobald du fertig bist, sende uns eine Bestätigungs-E-Mail. Nach deiner Einreichung werden wir uns mit dir in Verbindung setzen.
-
----
-
-**Diese Version** bietet den Bewerbern ausreichend Freiheit, ihre Fähigkeiten zu demonstrieren, während sie dennoch klare Anforderungen erfüllen müssen. So könnt ihr besser beurteilen, wie gut die Bewerber sowohl in der Problemlösung als auch in der praktischen Implementierung sind.

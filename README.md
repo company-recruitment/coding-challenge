@@ -5,7 +5,7 @@
 [![language](https://img.shields.io/badge/language-English-121212.svg?style=for-the-badge&labelColor=121212f2&color=9945FF)](https://github.com/company-recruitment/coding-challenge/blob/main/README.md)
 [![language](https://img.shields.io/badge/language-German-121212.svg?style=for-the-badge&labelColor=121212f2&color=9945FF)](https://github.com/company-recruitment/coding-challenge/blob/main/README.de.md)
 
-> Hi 👋! Thank you for taking the time to participate in this coding challenge. Your task is to develop a small but functional web application that provides a basic discussion feature. This task is designed to give us insight into your skills in Next.js, Tailwind CSS, PostgreSQL (Supabase), and the integration of UI components from [nyxbui.design](https://nyxbui.design).
+Hi 👋! Thank you for taking the time to participate in this coding challenge. Your task is to develop a small but functional web application that provides a basic discussion feature. This task is designed to give us insight into your skills in Next.js, Tailwind CSS, PostgreSQL (Supabase), and the integration of UI components from [nyxbui.design](https://nyxbui.design).
 
 #### **What We Expect**
 
@@ -71,8 +71,8 @@ We provide you with a base project preconfigured with Next.js, Tailwind CSS, and
 1. **Clone the Repository:**
 
    ```bash
-   git clone [REPO-URL]
-   cd project-folder
+   git clone https://github.com/company-recruitment/coding-challenge.git
+   cd coding-challenge
    ```
 
 2. **Install Dependencies:**
