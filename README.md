@@ -1,95 +1,96 @@
-### **Next.js Coding Challenge: Gamer Discussion Snippets**
+# **Next.js Coding Challenge: Gamer Discussion Snippets**
 
-Hi 👋! Vielen Dank, dass du dir die Zeit nimmst, an dieser Coding-Challenge teilzunehmen. Deine Aufgabe ist es, eine kleine, aber funktionale Webanwendung zu entwickeln, die eine grundlegende Diskussionsfunktion bietet. Diese Aufgabe soll uns einen Einblick in deine Fähigkeiten in Next.js, Tailwind CSS, PostgreSQL (Supabase), und die Integration von UI-Komponenten von [nyxbui.design](https://nyxbui.design) geben.
+[!pixy-coding-challenge](./assets/pixy-coding-challenge.png)
 
-#### **Was wir erwarten**
+[![language](https://img.shields.io/badge/language-English-121212.svg?style=for-the-badge&labelColor=121212f2&color=9945FF)](https://github.com/company-recruitment/coding-challenge/blob/main/README.md)
+[![language](https://img.shields.io/badge/language-German-121212.svg?style=for-the-badge&labelColor=121212f2&color=9945FF)](https://github.com/company-recruitment/coding-challenge/blob/main/README.de.md)
 
-Wir erwarten, dass diese Aufgabe etwa 2-3 Stunden dauert. Der Fokus liegt darauf, sauberen, gut strukturierten Code zu schreiben und die wichtigsten Funktionen zu implementieren.
+> Hi 👋! Thank you for taking the time to participate in this coding challenge. Your task is to develop a small but functional web application that provides a basic discussion feature. This task is designed to give us insight into your skills in Next.js, Tailwind CSS, PostgreSQL (Supabase), and the integration of UI components from [nyxbui.design](https://nyxbui.design).
 
-#### **Die Challenge**
+#### **What We Expect**
 
-Entwickle eine einfache Anwendung, die es Nutzern ermöglicht, **kurze Diskussions-Snippets** zu erstellen und anzuzeigen. Diese Snippets könnten als kurze Meinungsäußerungen oder Fragen zu einem bestimmten Spiel oder Thema gedacht sein.
+We expect this task to take about 2-3 hours. The focus is on writing clean, well-structured code and implementing the key features.
 
-**Funktionalitäten:**
+#### **The Challenge**
 
-1. **Erstellen und Anzeigen von Snippets:**
+Develop a simple application that allows users to create and display **short discussion snippets**. These snippets could be short opinions or questions about a specific game or topic.
 
-   -  Nutzer sollen über ein einfaches Formular kurze Diskussionsbeiträge (Snippets) erstellen können.
-   -  Diese Snippets werden in einer PostgreSQL-Datenbank gespeichert (via Supabase).
-   -  Eine Liste der Snippets wird auf der Hauptseite angezeigt.
+**Features:**
 
-2. **Nutzung von `nyxbui.design` Komponenten:**
-   -  Verwende Komponenten von `nyxbui.design` für das Formular und die Darstellung der Snippets.
+1. **Create and Display Snippets:**
 
-#### **Datenbankanforderungen**
+   -  Users should be able to create short discussion posts (snippets) via a simple form.
+   -  These snippets should be stored in a PostgreSQL database (via Supabase).
+   -  A list of snippets should be displayed on the main page.
 
--  **Pflichtanforderung:** Die Anwendung muss eine Datenbankstruktur enthalten, die es ermöglicht, Diskussions-Snippets zu speichern und abzurufen.
--  **Offen lassen:** Es liegt an dir, wie du die Datenbankstruktur gestaltest. Überlege, welche Informationen gespeichert werden sollten (z.B. Inhalt, Zeitstempel, Benutzerinformationen, etc.) und wie du diese am besten strukturierst.
+2. **Use `nyxbui.design` Components:**
+   -  Use components from `nyxbui.design` for the form and the display of snippets.
 
-#### **Supabase-Setup**
+#### **Database Requirements**
 
-Um sicherzustellen, dass alle Bewerber eine optimale Erfahrung haben, wirst du dein eigenes Supabase-Projekt einrichten. Hier ist eine Schritt-für-Schritt-Anleitung:
+-  **Mandatory Requirement:** The application must include a database structure that allows for storing and retrieving discussion snippets.
+-  **Open-ended:** It is up to you how you design the database structure. Consider what information should be stored (e.g., content, timestamp, user information, etc.) and how best to structure it.
 
-1. **Erstelle ein Supabase-Konto:**
+#### **Supabase Setup**
 
-   -  Gehe zu [supabase.com](https://supabase.com) und melde dich an.
-   -  Erstelle ein neues Projekt. Notiere dir die `API URL` und den `anon key`, die du später benötigst.
+To ensure all applicants have an optimal experience, you will set up your own Supabase project. Here is a step-by-step guide:
 
-2. **Erstelle die notwendige(n) Tabelle(n):**
+1. **Create a Supabase Account:**
 
-   -  Überlege dir, welche Tabellen du benötigst und welche Spalten sinnvoll sind. Dies könnte z.B. eine Tabelle für die Snippets sein, in der der Inhalt und weitere relevante Informationen gespeichert werden.
+   -  Go to [supabase.com](https://supabase.com) and sign up.
+   -  Create a new project. Note down the `API URL` and `anon key` that you will need later.
 
-3. **Konfiguriere dein Next.js-Projekt:**
+2. **Create the Necessary Table(s):**
 
-   -  Verwende die bereitgestellte `.env.local.example`-Datei, um die Supabase-URL und den anon key in deiner `.env.local`-Datei zu konfigurieren:
+   -  Think about what tables you need and what columns make sense. This could be a table for snippets where the content and other relevant information are stored.
+
+3. **Configure Your Next.js Project:**
+
+   -  Use the provided `.env.local.example` file to configure the Supabase URL and anon key in your `.env.local` file:
 
    ```plaintext
    NEXT_PUBLIC_SUPABASE_URL=https://your-project.supabase.co
    NEXT_PUBLIC_SUPABASE_KEY=your-anon-key
    ```
 
-4. **Installiere Supabase:**
+4. **Install Supabase:**
 
-   -  Falls noch nicht geschehen, installiere das Supabase-JavaScript-SDK:
+   -  If not already done, install the Supabase JavaScript SDK:
 
    ```bash
    npm install @supabase/supabase-js
    ```
 
-5. **Verbinde dein Projekt mit Supabase:**
-   -  In deinem Next.js-Projekt kannst du jetzt die Supabase-Client-Bibliothek verwenden, um auf deine Datenbank zuzugreifen.
+5. **Connect Your Project to Supabase:**
+   -  In your Next.js project, you can now use the Supabase client library to access your database.
 
-#### **Vorkonfiguriertes Projekt**
+#### **Preconfigured Project**
 
-Wir stellen dir ein Basisprojekt zur Verfügung, das mit Next.js, Tailwind CSS und `nyxbui.design` vorkonfiguriert ist. Du musst es nur klonen und die oben beschriebenen Schritte ausführen, um Supabase einzurichten.
+We provide you with a base project preconfigured with Next.js, Tailwind CSS, and `nyxbui.design`. You just need to clone it and follow the steps above to set up Supabase.
 
-1. **Clone the repository:**
+1. **Clone the Repository:**
 
    ```bash
    git clone [REPO-URL]
    cd project-folder
    ```
 
-2. **Install dependencies:**
+2. **Install Dependencies:**
 
    ```bash
    npm install
    ```
 
-3. **Run the development server:**
+3. **Run the Development Server:**
    ```bash
    npm run dev
    ```
 
 #### **FAQs**
 
--  **Was ist, wenn ich Schwierigkeiten habe, Supabase einzurichten?** Die Supabase-Dokumentation ist ein guter Ausgangspunkt. Diese Aufgabe ist auch dazu gedacht, deine Fähigkeit zu testen, neue Tools zu verwenden und dich selbstständig zurechtzufinden.
--  **Soll ich bestimmte Features implementieren?** Du kannst die Features priorisieren, die du für am wichtigsten hältst. Wir suchen nach einer soliden Grundlage, die zeigt, wie du Herausforderungen löst.
+-  **What if I have trouble setting up Supabase?** The Supabase documentation is a good starting point. This task is also designed to test your ability to use new tools and find your way independently.
+-  **Should I implement specific features?** You can prioritize the features you think are most important. We are looking for a solid foundation that shows how you solve challenges.
 
-#### **Viel Erfolg! 💪**
+#### **Good Luck! 💪**
 
-Sobald du fertig bist, sende uns eine Bestätigungs-E-Mail. Nach deiner Einreichung werden wir uns mit dir in Verbindung setzen.
-
----
-
-**Diese Version** bietet den Bewerbern ausreichend Freiheit, ihre Fähigkeiten zu demonstrieren, während sie dennoch klare Anforderungen erfüllen müssen. So könnt ihr besser beurteilen, wie gut die Bewerber sowohl in der Problemlösung als auch in der praktischen Implementierung sind.
+Once you are done, send us a confirmation email. After your submission, we will get in touch with you.
